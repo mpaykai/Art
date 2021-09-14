@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>Calculator </title>
+<meta name="viewport" content="width=device-width, 
+initial-scale=1.0;" />
+
+
+<script type="text/javascript" charset="utf-8">
+ 
+
+function sq(){
+cal.display.value=Math.sqrt(cal.display.value);
+ }
+</script>
+<style>
+body{
+background:white;
+}
+*{
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+.wrap{
+width:300px;
+margin:auto;
+height:450px;
+background:gray;
+border: 3px solid black;
+padding:10px;
+border-radius: 20px;
+}
+input[type=text]{
+background-color:white;
+width:100%;
+padding:5px;
+font-size:22px;
+font-height: bold;
+margin-top:20px;
+border-radius:5px;
+border-color: black;
+}
+input[type=button]{
+background-color: rgba(34,103,168);
+color: white;
+width:63px;
+padding:5px;
+font-size:22px;
+font-height:bold;
+border-radius:5px;
+border-color: black;
+text-align: center;
+}
+#del{
+width:48%;
+}
+input:hover {
+    background-color:skyblue;
+    color: black;
+    font-size: 28px;
+}
+
+#animate{
+ width:250px;
+ height:250px;
+  border-left:8px ridge gold;
+     border-top:8px ridge black;
+          border-right:8px ridge gold;
+          border-bottom:8px ridge black; 
+ animation-name:animate ;
+ animation-duration: 5s;
+ border-radius: 60px;
+          box-shadow:0 0 2px   2px gold;
+ animation: animate 5s;
+}
+  @keyframes animate{
+          0%{
+              border-radius: 0px;
+          box-shadow:0 0 1px   2px gold;
+          border-top:2px ridge black;
+          border-right:2px ridge gold;
+          border-left:2px ridge gold;
+          border-bottom:2px ridge black;
+          width: 100px;
+          height: 100px;
+              
+          } 
+          
+          
+          50%{
+              
+              transform: rotate(-360deg);
+            border-radius: 60px;
+          box-shadow:0 0 2px   2px gold;
+          border-top:8px ridge black;
+          border-right:8px ridge gold;
+          border-left:8px ridge gold;
+          border-bottom:8px ridge black;    
+              
+              
+          }
+          
+          
+          75{
+          transform: rotate3d(600deg);
+           border-radius: 60px;
+          box-shadow:0 0 2px   2px gold;
+          border-top:8px ridge black;
+          border-right:8px ridge gold;
+          border-left:8px ridge gold;
+          border-bottom:8px ridge black; 
+            }
+          
+          100%{
+           border-radius: 60px;
+          box-shadow:0 0 2px   2px gold;
+          border-top:8px ridge black;
+          border-right:8px ridge gold;
+          border-left:8px ridge gold;
+          border-bottom:8px ridge black; 
+        
+          
+      }
+          
+</style> 
+</head>
+<body>
+ 
+ <div><center>
+  <img title="Michael T.G. Paykai" id="animate" src="Michael2.jpg" alt="Michael Paykai" />
+  <h4 class="">Michael T.G.Paykai</h4>
+ </center>
+ </div>
+<br />
+<br />
+<h2>
+<center>
+ My First Calculator</center></h2>
+
+<div class="wrap">
+<form name ="cal">
+ <br />
+<input type="text" name ="display">
+<br><br>
+
+<input type="button" value ="7" onclick ="cal.display.value+='7'">
+<input type="button" value ="8" onclick ="cal.display.value+='8'">
+<input type="button" value ="9" onclick ="cal.display.value+='9'">
+<input type="button" value ="+" onclick ="cal.display.value+='+'">
+<br><br>
+<input type="button" value ="4" onclick ="cal.display.value+='4'">
+<input type="button" value ="5" onclick ="cal.display.value+='5'">
+<input type="button" value ="6" onclick ="cal.display.value+='6'">
+<input type="button" value ="-" onclick ="cal.display.value+='-'">
+<br><br>
+<input type="button" value ="1" onclick ="cal.display.value+='1'">
+<input type="button" value ="2" onclick ="cal.display.value+='2'">
+<input type="button" value ="3" onclick ="cal.display.value+='3'">
+<input type="button" value ="*" onclick ="cal.display.value+='*'">
+<br><br>
+<input type="button" value ="0" onclick ="cal.display.value+='0'">
+<input type="button" value ="/" onclick ="cal.display.value+='/'">
+<input type="button" value ="%" onclick ="cal.display.value+='%'">
+<input type="button" value ="=" onclick ="cal.display.value =eval(cal.display.value)">
+<br><br>
+<input type="button" value ="DELETE" onclick ="cal.display.value=''" id="del">
+
+
+<input type="button" value=" √ " onclick="sq()">
+
+<input type="button" value ="." onclick ="cal.display.value+='.'">
+</form>
+<br />
+<br />
+<center>
+             <p>Contact me via Social Media</p>
+             <a  title="Gmail/Email" href="mailto:paykaimichael56@gmail.com"> <img src="gmail.png" width="25px" height="25px" title="Contact me via Gmail/Email"></a>
+              &nbsp;
+             
+    <a title="Facebook" href="https://www.facebook.com/michael.paykai.7"> 
+        <img src="fb.png" width="25px" height="25px" title="Contact me via Facebook"></a>
+             &nbsp;
+           
+            
+            <a title="Messenger" href="https://m.me/michael.paykai.7 "> <img src="messenger.jpeg" width="25px" height="25px" title="Contact me via Facebook Messenger"></a>
+            &nbsp;
+             
+       
+  
+      
+          <a title="Instagram" style="color: blue;" href="https://www.instagram.com/invites/contact/?i=n7w5c6udkec8&utm_content=25kqnis"> <img src="instalink.png" width="25px" height="25px" title="Contact me via Instagram" ></a>
+             &nbsp;
+             
+             
+             </center>
+             <br />
+            
+            
+</body>
+</html>
